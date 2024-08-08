@@ -91,7 +91,7 @@ const router = useRouter()
 
 const login = async () => {
   try {
-    const response = await axiosInstance.post('/auth/login', {
+    const response = await axiosInstance.post('https://dev.pokerzone.bar/api/auth/login', {
       username: username.value,
       password: password.value
     })

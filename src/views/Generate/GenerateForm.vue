@@ -51,7 +51,7 @@ const handleGenerate = async () => {
   try {
 
     
-    const response = await axiosInstance.get(`${import.meta.env.POCKER_URL}/api/admins/account-link-generation`)
+    const response = await axiosInstance.get(`https://dev.pokerzone.bar/api/admins/account-link-generation`)
    
     if (response.data && response.data.link) {
       generatedLinks.value.push({ link: response.data })
