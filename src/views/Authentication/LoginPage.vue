@@ -6,7 +6,7 @@
       ></header>
       <main>
         <div class="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
-          <DefaultAuthCard subtitle="Start for free" title="Sign I">
+          <DefaultAuthCard subtitle="Start for free" title="Sign In">
             <form @submit.prevent="login">
               <div class="mb-4">
                 <label class="mb-2.5 block font-medium text-black dark:text-white">Username</label>

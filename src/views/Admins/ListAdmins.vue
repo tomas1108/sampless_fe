@@ -61,7 +61,7 @@ const fetchAdmins = async () => {
       page: currentPage.value.toString(),
       limit: itemsPerPage.value.toString()
     })
-    const response = await axiosInstance.get(`/admins?${params.toString()}`)
+    const response = await axiosInstance.get(`https://dev.pokerzone.bar/api/admins?${params.toString()}`)
 
     if (response.data?.data?.length < itemsPerPage.value) {
       hasMore.value = false
